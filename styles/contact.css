@@ -1,0 +1,20 @@
+main a {
+  color: #000000;
+
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
+
+main a span:first-child {
+  margin-right: 1rem;
+}
+
+.dark-mode main a {
+  color: var(--other-title-color);
+}

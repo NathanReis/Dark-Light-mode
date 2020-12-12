@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dark/Light mode</title>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+</head>
+<body>
+  <div id="mask"></div>
+
+  <header>
+    <nav>
+      <span><a href="about.html">About</a></span>
+
+      <div id="home">
+        <a href="index.html"><span data-feather="home"></span></a>
+      </div>
+
+      <span><a href="#">Contact</a></span>
+    </nav>
+
+    <h1>Contact</h1>
+  </header>
+
+  <div id="settings">
+    <span data-feather="settings"></span>
+  </div>
+
+  <main>
+    <div id="linkedin-block">
+      <h3 class="other-title">
+        <a href="https://linkedin.com/in/nathan-reis-ba2282193">
+          <span>LinkedIn</span>
+          <span data-feather="linkedin"></span>
+        </a>
+      </h3>
+    </div>
+
+    <div id="email-block">
+      <h3 class="other-title">
+        <a href="mailto:nathansilvareis@gmail.com">
+          <span>E-mail</span>
+          <span data-feather="mail"></span>
+        </a>
+      </h3>
+    </div>
+
+    <div id="facebook-block">
+      <h3 class="other-title">
+        <a href="https://www.facebook.com/nathan.silvareis.3/">
+          <span>Facebook</span>
+          <span data-feather="facebook"></span>
+        </a>
+      </h3>
+    </div>
+  </main>
+
+  <footer>
+    <p>Nathan da Silva Reis - No right reserved</p>
+  </footer>
+
+  <div class="hide" id="settings-block">
+    <div id="mode-block">
+      <h3>Mode</h3>
+
+      <button type="button" id="light-mode">
+        <span data-feather="sun"></span>
+      </button>
+      <button type="button" id="dark-mode">
+        <span data-feather="moon"></span>
+      </button>
+    </div>
+
+    <br />
+
+    <div id="brightness-block">
+      <h3>Brightness</h3>
+
+      <button type="button" id="down-brightness">
+        <span data-feather="minus-circle"></span>
+      </button>
+      <button type="button" id="up-brightness">
+        <span data-feather="plus-circle"></span>
+      </button>
+    </div>
+  </div>
+
+  <script src="js/global.js"></script>
+</body>
+</html>

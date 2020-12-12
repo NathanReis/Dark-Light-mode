@@ -1,0 +1,37 @@
+main {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-evenly;
+}
+
+main div:first-child {
+  display: flex;
+}
+
+main div:first-child img {
+  height: 10rem;
+  width: 10rem;
+
+  border-radius: 5rem;
+
+  margin: auto;
+}
+
+main div:last-child {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-evenly;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 500px) {
+  main {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+:root {
+  --background-color-dark: #2e2f29;
+  --title-page-color-dark: #f0f0f0;
+  --other-title-color-dark: #c4c4c4;
+  --simple-content-color: #858585;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  font-family: 'Nova Mono', monospace;
+}
+
+#mask {
+  height: 100vh;
+  width: 100vw;
+
+  z-index: 999;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  pointer-events: none;
+}
+
+header {
+  position: fixed;
+
+  height: 15vh;
+  width: 100vw;
+
+  top: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-content: center;
+
+  line-height: 2rem;
+}
+
+nav a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  text-decoration: none;
+
+  color: #000000;
+}
+
+#home {
+  font-size: 2rem;
+}
+
+#settings {
+  height: 3rem;
+  width: 3rem;
+
+  border-radius: 1.5rem;
+
+  font-size: 2rem;
+
+  background-color: black;
+  color: white;
+
+  position: fixed;
+
+  right: 1rem;
+  top: 1rem;
+}
+
+main {
+  margin-bottom: 5vh;
+  margin-top: 15vh;
+
+  height: 80vh;
+
+  overflow: auto;
+}
+
+footer {
+  position: fixed;
+
+  height: 5vh;
+  width: 100vw;
+
+  bottom: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+#settings-block {
+  position: fixed;
+
+  right: 1rem;
+  top: 4.5rem;
+
+  background-color: #8d8f88;
+
+  border-radius: 0.5rem;
+
+  padding: 0.5rem;
+}
+
+#settings-block button {
+  background-color: transparent;
+
+  border-width: 0;
+}
+
+#settings-block button:focus {
+  outline: none;
+}
+
+.mode-selected {
+  color: #ffffff;
+}
+
+.hide {
+  display: none;
+}
+
+.dark-mode {
+  background-color: var(--background-color-dark);
+}
+
+.dark-mode header h1 {
+  color: var(--title-page-color-dark);
+}
+
+.dark-mode nav a {
+  color: var(--other-title-color-dark);
+}
+
+.dark-mode .other-title {
+  color: var(--other-title-color-dark);
+}
+
+.dark-mode .simple-content {
+  color: var(--simple-content-color);
+}
+
+.dark-mode footer {
+  color: var(--simple-content-color);
+}

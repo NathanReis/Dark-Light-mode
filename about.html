@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dark/Light mode</title>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/about.css" />
+</head>
+<body>
+  <div id="mask"></div>
+
+  <header>
+    <nav>
+      <span><a href="#">About</a></span>
+
+      <div id="home">
+        <a href="index.html"><span data-feather="home"></span></a>
+      </div>
+
+      <span><a href="contact.html">Contact</a></span>
+    </nav>
+
+    <h1>About</h1>
+  </header>
+
+  <div id="settings">
+    <span data-feather="settings"></span>
+  </div>
+
+  <main>
+    <div>
+      <img src="" alt="Avatar" id="avatar" />
+    </div>
+
+    <div>
+      <div class="information">
+        <h3 class="other-title">Name</h3>
+        <p class="simple-content" id="name"></p>
+      </div>
+
+      <div class="information">
+        <h3 class="other-title">Company</h3>
+        <p class="simple-content" id="company"></p>
+      </div>
+
+      <div class="information">
+        <h3 class="other-title">Location</h3>
+        <p class="simple-content" id="location"></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Nathan da Silva Reis - No right reserved</p>
+  </footer>
+
+  <div class="hide" id="settings-block">
+    <div id="mode-block">
+      <h3>Mode</h3>
+
+      <button type="button" id="light-mode">
+        <span data-feather="sun"></span>
+      </button>
+      <button type="button" id="dark-mode">
+        <span data-feather="moon"></span>
+      </button>
+    </div>
+
+    <br />
+
+    <div id="brightness-block">
+      <h3>Brightness</h3>
+
+      <button type="button" id="down-brightness">
+        <span data-feather="minus-circle"></span>
+      </button>
+      <button type="button" id="up-brightness">
+        <span data-feather="plus-circle"></span>
+      </button>
+    </div>
+  </div>
+
+  <script src="js/global.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>

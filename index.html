@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Dark/Light mode</title>
+
+  <script src="https://unpkg.com/feather-icons"></script>
+
+  <link rel="stylesheet" href="styles/global.css" />
+  <link rel="stylesheet" href="styles/index.css" />
+</head>
+<body>
+  <div id="mask"></div>
+
+  <header>
+    <nav>
+      <span><a href="about.html">About</a></span>
+
+      <div id="home">
+        <a href="#"><span data-feather="home"></span></a>
+      </div>
+
+      <span><a href="contact.html">Contact</a></span>
+    </nav>
+
+    <h1>Dark/Light mode</h1>
+  </header>
+
+  <div id="settings">
+    <span data-feather="settings"></span>
+  </div>
+
+  <main>
+    <div>
+      <div id="objective">
+        <h3 class="other-title">
+          <span>Objective</span>
+          <span data-feather="target"></span>
+        </h3>
+        <p class="simple-content">Practice a little bit about front-end</p>
+      </div>
+
+      <div id="time-spend">
+        <h3 class="other-title">
+          <span>Time spent</span>
+          <span data-feather="clock"></span>
+        </h3>
+        <p class="simple-content">06 h : 30 min</p>
+      </div>
+    </div>
+
+    <div>
+      <div id="digital-clock">
+        <div id="hour">
+          <div class="first-digit">
+            <div class="digit-top"></div>
+            <div class="digit-bottom"></div>
+          </div>
+          <div class="second-digit">
+            <div class="digit-top"></div>
+            <div class="digit-bottom"></div>
+          </div>
+        </div>
+        <div class="separator">
+          <div></div>
+          <div></div>
+        </div>
+        <div id="minute">
+          <div class="first-digit">
+            <div class="digit-top"></div>
+            <div class="digit-bottom"></div>
+          </div>
+          <div class="second-digit">
+            <div class="digit-top"></div>
+            <div class="digit-bottom"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Nathan da Silva Reis - No right reserved</p>
+  </footer>
+
+  <div class="hide" id="settings-block">
+    <div id="mode-block">
+      <h3>Mode</h3>
+
+      <button type="button" id="light-mode">
+        <span data-feather="sun"></span>
+      </button>
+      <button type="button" id="dark-mode">
+        <span data-feather="moon"></span>
+      </button>
+    </div>
+
+    <br />
+
+    <div id="brightness-block">
+      <h3>Brightness</h3>
+
+      <button type="button" id="down-brightness">
+        <span data-feather="minus-circle"></span>
+      </button>
+      <button type="button" id="up-brightness">
+        <span data-feather="plus-circle"></span>
+      </button>
+    </div>
+  </div>
+
+  <script src="js/global.js"></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

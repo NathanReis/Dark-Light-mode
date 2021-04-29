@@ -1,9 +1,7 @@
 # Dark/Light mode
 
-Apenas para treino, um projetinho web no modo vanilla.
-
-O tempo gasto realmente foi alto, o fator que mais implicou foi o relógio.
+Permite alternar entre modo claro ou escuro além também permitir o brilho da página.
 
 ### Link:
 
-https://nathanreis.github.io/Dark-Light-mode/
+https://nathanreis.github.io/Dark-Light-mode

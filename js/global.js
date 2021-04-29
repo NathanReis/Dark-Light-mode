@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
   const LOCAL_VARIABLES = Object.freeze({
-    ALPHA: '@darklitemode:alpha',
-    MODE: '@darklitemode:mode'
+    ALPHA: '@darklightmode:alpha',
+    MODE: '@darklightmode:mode'
   });
 
   feather.replace();
